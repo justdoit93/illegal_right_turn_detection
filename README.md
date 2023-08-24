@@ -11,7 +11,7 @@
 * 장호정
 * 정해찬
 ## 데이터 소개
-
+![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/a9ccd225-c147-4b10-9ac6-f8b160de3caf)
 ## 개발 과정
 ## 상세역할
 * 교차로 영상 데이터 EDA 진행
