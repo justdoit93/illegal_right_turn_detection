@@ -9,6 +9,7 @@
 ### 프로젝트 목표
 * 교차로 내 불법 우회전 차량 단속 시스템을 개발하여 교차로 내 보행자의 안전성을 향상
 ### 우회전 위반 감지 process
+![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/589c908d-2cf9-465c-9c57-17cfdb4ee46e)
 ### 결과
 ## 팀구성 및 역할
 * 이성수
@@ -30,6 +31,6 @@
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/a9ccd225-c147-4b10-9ac6-f8b160de3caf)
 ## 개발 과정
 ## 상세역할
-* 교차로 영상 데이터 EDA 진행
+* 교차로 영상 데이터 EDA 및 이미지 전처리
 * 우회전 차량 인식 알고리즘 개발 및 모델 문제점 개선
 * 과태료 책정을 위한 승용차 및 승합차 분류 딥러닝 모델 개발
