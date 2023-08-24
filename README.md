@@ -11,6 +11,8 @@
 ### 우회전 위반 감지 process
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/589c908d-2cf9-465c-9c57-17cfdb4ee46e)
 ### 결과
+![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/8eab4f01-a2d1-4764-b9f9-10e416121fa1)
+![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/1ae83121-4906-4113-b5c6-3d837e211db7)
 ## 팀구성 및 역할
 * 이성수
   * 교차로 영상 데이터 EDA 및 이미지 전처리
