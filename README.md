@@ -15,7 +15,7 @@
 ## 팀구성 및 역할
 * 이성수
   * 교차로 영상 데이터 EDA 및 이미지 전처리
-  * 우회전 차량 인식 알고리즘 개발 및 모델 문제점 개선
+  * 우회전 위반 감지 process 개발 및 모델 문제점 개선
   * 과태료 책정을 위한 승용차 및 승합차 분류 딥러닝 모델 개발
 * 이종혁
   * YOLO 버전 및 트래커 비교 및 선정
@@ -34,7 +34,7 @@
 * 교차로 영상 데이터 EDA 및 이미지 전처리
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/7158f7f3-11ca-4fcd-985a-b7820801dfea)
 
-* 우회전 차량 인식 알고리즘 개발 및 모델 문제점 개선
+* 우회전 위반 감지 process 개발 및 모델 문제점 개선
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/5d50c539-7ef9-4aaf-8ee8-9e44582e2c2d)
 
  
