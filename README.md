@@ -2,8 +2,8 @@
 ## 목차
 * [프로젝트 개요](#프로젝트-개요)
 * [팀구성 및 역할](#팀구성-및-역할)
-* [데이터 소개](#데이터-소개)
-* [상세역할 및 개발과정](#상세역할-및-개발과정)
+* [데이터 개요](#데이터-개요)
+* [개발과정](#개발과정)
 ## 프로젝트 개요
 * 도로교통법 개정으로 우회전 위반차량 단속 필요
 * 단속 시행 결과 전년도 동기간 우회전 교통사고 51.3% 감소
@@ -39,18 +39,39 @@
 * 정해찬
   * 모델 학습 데이터 수집
   * 오토바이, 보행자 분류 딥러닝 모델 개발
-## 데이터 소개
-![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/a9ccd225-c147-4b10-9ac6-f8b160de3caf)
-## 상세역할 및 개발과정
-* 교차로 영상 데이터 EDA 및 이미지 전처리
-![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/7158f7f3-11ca-4fcd-985a-b7820801dfea)
+## 데이터 개요
+* 출처 : 한양대학교 교통공학과
+![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/d709ace7-d0e0-4f87-b2c0-9b9a376fced3)
+* 오전 약 30분, 오후 약 56분 영상 데이터
+* 영상 내 우회전 차량, 일시정지 위반 여부 및 시간 확인
+* 위반여부 확인 위해 전방차량신호 시간별 라벨링
 
-* 우회전 위반 감지 process 개발 및 모델 문제점 개선
-![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/5d50c539-7ef9-4aaf-8ee8-9e44582e2c2d)
+## 개발과정
+### 위반 감지 모델
+* 우회전 차량 인식
+  * 영상내 우회전 차량 인식하기 위해 tracking 사용
+  * 객체 인식 및 연산속도 비교를 통해 Yolov8s bot_sort 트래커 사용
+  ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/5b4e8120-e4a3-423b-94b2-ec5292d71623)
+  * 객체 바운딩박스 좌표를 통해 우회전 차량 판단
 
- 
-* 과태료 책정을 위한 승용차 및 승합차 분류 딥러닝 모델 개발
-![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/32b6ce51-0a98-487d-9168-c1a9ec91d004)
-![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/2bfd4edb-789a-482c-8e42-af6a49ab695d)
-![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/930810c7-479d-4003-b5e1-6f2d5106947f)
+* 차량 일시정지 인식
+  ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/ab8ad353-c7d3-4865-a65a-ba22a53cdd78)
+  * 객체 바운딩박스의 변동을 통해 일시정지 판단
+  * 일시정지의 상태에도 좌표의 변동 발생
+  * 특이값의 영향을 줄이기 위해 좌표의 이동평균 사용
+
+* 횡단보도 내 보행자 인식
+  * 횡단보도 ROI 설정
+  * 오토바이 라이더를 보행자로 인식하는 문제 발생
+  * Yolo 커스텀 모델 학습하여 오토바이 라이더와 보행자 구분하여 인식
+    
+### 위반 차량 범칙금 분류 모델
+![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/0e3dc82b-ff05-41aa-ad81-d6c555fe7e61)
+* 승용차, 승합차 범칙금 분류
+* DenseNet 사용하여 104,465개 이미지 학습
+* test accuracy : 99.22%
+
+## 기대효과
+* 우회전 교통사고 감소로 인명피해 방지
+* 단속하는 인력 줄여 다른 곳에 배치 가능
 
