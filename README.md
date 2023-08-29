@@ -7,15 +7,22 @@
 ## 프로젝트 개요
 * 도로교통법 개정으로 우회전 위반차량 단속 필요
 * 단속 시행 결과 전년도 동기간 우회전 교통사고 51.3% 감소
+
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/e9a8a162-2a16-4091-8057-55b7845b52b0)
 
 ### 프로젝트 목표
 * 교차로 내 불법 우회전 차량 단속 시스템을 개발하여 교차로 내 보행자의 안전성을 향상하고자 함
+
 ### 우회전 위반 감지 process
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/589c908d-2cf9-465c-9c57-17cfdb4ee46e)
 ### 결과
-![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/8eab4f01-a2d1-4764-b9f9-10e416121fa1)
-![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/1ae83121-4906-4113-b5c6-3d837e211db7)
+![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/9e6aecbb-6634-437c-8307-6c6b395e6937)
+![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/a8fee6ad-e87a-4ed9-af3e-971f5d06f224)
+
+* 총 86분 길이 영상에서 8번 위반사항 모두 감지
+* 승용차, 승합차 범칙금 모두 맞게 분류
+* 위반 내용 및 범칙금 엑셀 파일로 저장
+  
 ## 팀구성 및 역할
 * 이성수
   * 교차로 영상 데이터 EDA 및 이미지 전처리
