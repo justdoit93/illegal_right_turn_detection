@@ -51,11 +51,15 @@
 * 우회전 차량 인식
   * 영상내 우회전 차량 인식하기 위해 tracking 사용
   * 객체 인식 및 연산속도 비교를 통해 Yolov8s bot_sort 트래커 사용
+    
   ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/5b4e8120-e4a3-423b-94b2-ec5292d71623)
+  
   * 객체 바운딩박스 좌표를 통해 우회전 차량 판단
 
 * 차량 일시정지 인식
+  
   ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/ab8ad353-c7d3-4865-a65a-ba22a53cdd78)
+  
   * 객체 바운딩박스의 변동을 통해 일시정지 판단
   * 일시정지의 상태에도 좌표의 변동 발생
   * 특이값의 영향을 줄이기 위해 좌표의 이동평균 사용
@@ -66,7 +70,9 @@
   * Yolo 커스텀 모델 학습하여 오토바이 라이더와 보행자 구분하여 인식
     
 ### 위반 차량 범칙금 분류 모델
+
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/0e3dc82b-ff05-41aa-ad81-d6c555fe7e61)
+
 * 승용차, 승합차 범칙금 분류
 * DenseNet 사용하여 104,465개 이미지 학습
 * test accuracy : 99.22%
