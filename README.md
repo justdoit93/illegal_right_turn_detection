@@ -1,11 +1,13 @@
 # 불법 우회전 차량 단속 시스템
 단속 및 과태료 부과 시스템 개발
+
 ## 목차
 * [프로젝트 개요](#프로젝트-개요)
 * [팀구성 및 역할](#팀구성-및-역할)
 * [데이터 개요](#데이터-개요)
 * [개발과정](#개발과정)
 * [기대효과](#기대효과)
+
 ## 프로젝트 개요
 * 도로교통법 개정으로 우회전 위반차량 단속 필요
 * 단속 시행 결과 전년도 동기간 우회전 교통사고 51.3% 감소
@@ -17,6 +19,7 @@
 
 ### 우회전 위반 감지 process
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/589c908d-2cf9-465c-9c57-17cfdb4ee46e)
+
 ### 결과
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/9e6aecbb-6634-437c-8307-6c6b395e6937)
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/a8fee6ad-e87a-4ed9-af3e-971f5d06f224)
@@ -26,6 +29,7 @@
 * 위반 내용 및 범칙금 엑셀 파일로 저장
   
 ## 팀구성 및 역할
+
 * 이성수
   * 교차로 영상 데이터 EDA 및 이미지 전처리
   * 우회전 위반 감지 process 개발 및 모델 문제점 개선
@@ -41,7 +45,9 @@
 * 정해찬
   * 모델 학습 데이터 수집
   * 오토바이, 보행자 분류 딥러닝 모델 개발
+    
 ## 데이터 개요
+
 * 출처 : 한양대학교 교통공학과
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/d709ace7-d0e0-4f87-b2c0-9b9a376fced3)
 * 오전 약 30분, 오후 약 56분 영상 데이터
@@ -49,7 +55,9 @@
 * 위반여부 확인 위해 전방차량신호 시간별 라벨링
 
 ## 개발과정
+
 ### 위반 감지 모델
+
 * 우회전 차량 인식
   * 영상내 우회전 차량 인식하기 위해 tracking 사용
   * 객체 인식 및 연산속도 비교를 통해 Yolov8s bot_sort 트래커 사용
