@@ -60,7 +60,7 @@
 
 * 출처 : 한양대학교 교통공학과
 ![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/d709ace7-d0e0-4f87-b2c0-9b9a376fced3)
-* 오전 약 30분, 오후 약 56분 영상 데이터
+* 오전 약 30분, 오후 약 56분 영상 데이터(2방향 CCTV 영상)
 * 영상 내 우회전 차량, 일시정지 위반 여부 및 시간 확인
 * 위반여부 확인 위해 전방차량신호 시간별 라벨링
 
