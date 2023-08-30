@@ -83,6 +83,9 @@
   * 특이값의 영향을 줄이기 위해 좌표의 이동평균 사용
 
 * 횡단보도 내 보행자 인식
+
+![image](https://github.com/justdoit93/illegal_right_turn_detection/assets/129941418/67644f85-3373-4bb4-be9d-453163c75769)
+
   * 횡단보도 ROI 설정
   * 오토바이 라이더를 보행자로 인식하는 문제 발생
   * Yolo 커스텀 모델 학습하여 오토바이 라이더와 보행자 구분하여 인식
